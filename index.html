@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,49 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
+
 <body>
     <section class="top center">
         <h1 class="top__title">Добро пожаловать<br>на мой сайт мини-игр</h1>
-        <p class="top__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай «Поехали!» и приступай.</p>
-        <a class="top__btn" href="#">Поехали!</a>
+        <p class="top__text">Тебе предстоит пройти несколько увлекательных игр.<br>
+            Если готов, нажимай <b>«Поехали!»</b> и <b>приступай.</b></p>
+        <button class="top__btn" type="button">Поехали!</button>
+        <svg class="top__overlay-img" width="587" height="798" viewBox="0 0 587 798" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M241.793 -10L318 78.3799L1 153" stroke="#202027" stroke-linecap="round" />
+            <path
+                d="M708.682 48.4061C718.111 51.031 980.516 161.965 980.516 161.965L702.111 191.848L877.994 417.66L630.036 263.412L604.772 524.856L534.884 249.531L301.938 380.493L462.405 188.266L177.63 175.289L445.303 95.0267L246.404 -134.041L526.036 -2.49639L590.031 -256.31L618.768 -1.9517L873.48 -177.398L708.682 48.4061Z"
+                fill="#BCEC30" stroke="#202027" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M232.082 254H356L214 433" stroke="#202027" stroke-linecap="round" />
+            <path d="M372 458.046L485.76 379L591.882 797" stroke="#202027" stroke-linecap="round" />
+            <path d="M450.159 468L394 526.765L474 594L450.159 468Z" fill="#BCEC30" stroke="#202027"
+                stroke-linecap="round" />
+            <path d="M492 663L526 787" stroke="#202027" stroke-linecap="round" />
+        </svg>
+        <svg class="top__overlay-star1" width="83" height="83" viewBox="0 0 83 83" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M52.2402 30.4648L52.3193 30.6807L52.5352 30.7598L81.5586 41.5L52.5352 52.2402L52.3193 52.3193L52.2402 52.5352L41.5 81.5586L30.7598 52.5352L30.6807 52.3193L30.4648 52.2402L1.44043 41.5L30.4648 30.7598L30.6807 30.6807L30.7598 30.4648L41.5 1.44043L52.2402 30.4648Z"
+                stroke="#202027" />
+        </svg>
+        <svg class="top__overlay-star2" width="37" height="37" viewBox="0 0 37 37" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M23.0273 13.6768L23.1074 13.8926L23.3232 13.9727L35.5586 18.5L23.3232 23.0273L23.1074 23.1074L23.0273 23.3232L18.5 35.5586L13.9727 23.3232L13.8926 23.1074L13.6768 23.0273L1.44043 18.5L13.6768 13.9727L13.8926 13.8926L13.9727 13.6768L18.5 1.44043L23.0273 13.6768Z"
+                fill="#BCEC30" stroke="#202027" />
+        </svg>
+        <svg class="top__overlay-star3" width="57" height="57" viewBox="0 0 57 57" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M35.7285 20.9756L35.8086 21.1914L36.0244 21.2715L55.5586 28.5L36.0244 35.7285L35.8086 35.8086L35.7285 36.0244L28.5 55.5586L21.2715 36.0244L21.1914 35.8086L20.9756 35.7285L1.44043 28.5L20.9756 21.2715L21.1914 21.1914L21.2715 20.9756L28.5 1.44043L35.7285 20.9756Z"
+                fill="#BCEC30" stroke="#202027" />
+        </svg>
+        <svg class="top__overlay-star4" width="35" height="35" viewBox="0 0 35 35" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M21.7578 12.9473L21.8379 13.1621L22.0527 13.2422L33.5586 17.5L22.0527 21.7578L21.8379 21.8379L21.7578 22.0527L17.5 33.5586L13.2422 22.0527L13.1621 21.8379L12.9473 21.7578L1.44043 17.5L12.9473 13.2422L13.1621 13.1621L13.2422 12.9473L17.5 1.44043L21.7578 12.9473Z"
+                stroke="#202027" />
+        </svg>
         <!-- <div class="scroll">
             <div class="scroll__box">
             <div class="scroll__text-box">
@@ -58,45 +97,46 @@
     </section>
     <section class="game-box center">
         <h2 class="game-box__title">Об играх</h2>
-        <p class="game-box__text">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br>Все игры доступны для пользования.</p>
+        <p class="game-box__text">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может
+            поиграть каждый.<br>Все игры доступны для пользования.</p>
         <div class="game-box__card-box">
             <a href="#game1" class="game-box__card">
-                <img src="Images/game1.jpeg" alt="Угадай число" class="game-box__img">
+                <img src="Images/game1.jpg" alt="Угадай число" class="game-box__img">
                 <div class="game-box__card-text">
                     <p class="game-box__number">Игра № 1</p>
                     <h4 class="game-box__name">Угадай число</h4>
                 </div>
             </a>
             <a href="#game2" class="game-box__card">
-                <img src="Images/game2.jpeg" alt="Простая арифметика" class="game-box__img">
+                <img src="Images/game2.jpg" alt="Простая арифметика" class="game-box__img">
                 <div class="game-box__card-text">
                     <p class="game-box__number">Игра № 2</p>
                     <h4 class="game-box__name">Простая арифметика</h4>
                 </div>
             </a>
             <a href="#game3" class="game-box__card">
-                <img src="Images/game3.jpeg" alt="Переверни текст" class="game-box__img">
+                <img src="Images/game3.jpg" alt="Переверни текст" class="game-box__img">
                 <div class="game-box__card-text">
                     <p class="game-box__number">Игра № 3</p>
                     <h4 class="game-box__name">Переверни текст</h4>
                 </div>
             </a>
             <a href="#game4" class="game-box__card">
-                <img src="Images/game4.jpeg" alt="Камень, ножницы, бумага" class="game-box__img">
+                <img src="Images/game4.jpg" alt="Камень, ножницы, бумага" class="game-box__img">
                 <div class="game-box__card-text">
                     <p class="game-box__number">Игра № 4</p>
                     <h4 class="game-box__name">Камень, ножницы, бумага</h4>
                 </div>
             </a>
             <a href="#game5" class="game-box__card">
-                <img src="Images/game5.jpeg" alt="Простая викторина" class="game-box__img">
+                <img src="Images/game5.jpg" alt="Простая викторина" class="game-box__img">
                 <div class="game-box__card-text">
                     <p class="game-box__number">Игра № 5</p>
                     <h4 class="game-box__name">Простая викторина</h4>
                 </div>
             </a>
             <a href="#game6" class="game-box__card">
-                <img src="Images/game6.jpeg" alt="Генератор случайных цветов" class="game-box__img">
+                <img src="Images/game6.jpg" alt="Генератор случайных цветов" class="game-box__img">
                 <div class="game-box__card-text">
                     <p class="game-box__number">Игра № 6</p>
                     <h4 class="game-box__name">Генератор случайных цветов</h4>
@@ -113,7 +153,7 @@
                     <p class="minigame-box__description">Попробуй угадать случайное число от 1 до 100.</p>
                     <a class="card__btn" href="#">Играть!</a>
                 </div>
-                <img src="Images/game1.jpeg" alt="Угадай число" class="minigame-box__img">
+                <img src="Images/game1.jpg" alt="Угадай число" class="minigame-box__img">
             </article>
             <article id="game2" class="minigame-box__card">
                 <div class="minigame-box__card-text">
@@ -121,7 +161,7 @@
                     <p class="minigame-box__description">Попробуй решить простые арифметические задачи.</p>
                     <a class="card__btn" href="#">Играть!</a>
                 </div>
-                <img src="Images/game2.jpeg" alt="Простая арифметика" class="minigame-box__img">
+                <img src="Images/game2.jpg" alt="Простая арифметика" class="minigame-box__img">
             </article>
             <article id="game3" class="minigame-box__card">
                 <div class="minigame-box__card-text">
@@ -129,7 +169,7 @@
                     <p class="minigame-box__description">Попробуй ввести текст, который будет перевернут.</p>
                     <a class="card__btn" href="#">Играть!</a>
                 </div>
-                <img src="Images/game3.jpeg" alt="Переверни текст" class="minigame-box__img">
+                <img src="Images/game3.jpg" alt="Переверни текст" class="minigame-box__img">
             </article>
             <article id="game4" class="minigame-box__card">
                 <div class="minigame-box__card-text">
@@ -137,7 +177,7 @@
                     <p class="minigame-box__description">Сыграй в популярную игру против компьютера.</p>
                     <a class="card__btn" href="#">Играть!</a>
                 </div>
-                <img src="Images/game4.jpeg" alt="Камень, ножницы, бумага" class="minigame-box__img">
+                <img src="Images/game4.jpg" alt="Камень, ножницы, бумага" class="minigame-box__img">
             </article>
             <article id="game5" class="minigame-box__card">
                 <div class="minigame-box__card-text">
@@ -145,15 +185,16 @@
                     <p class="minigame-box__description">Отвечай на вопросы викторины с вариантами ответов.</p>
                     <a class="card__btn" href="#">Играть!</a>
                 </div>
-                <img src="Images/game5.jpeg" alt="Простая викторина" class="minigame-box__img">
+                <img src="Images/game5.jpg" alt="Простая викторина" class="minigame-box__img">
             </article>
             <article id="game6" class="minigame-box__card">
                 <div class="minigame-box__card-text">
                     <h3 class="minigame-box__name">Генератор случайных цветов</h3>
-                    <p class="minigame-box__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                    <p class="minigame-box__description">Игра, в которой при клике на кнопку фон страницы меняется на
+                        случайный.</p>
                     <a class="card__btn" href="#">Играть!</a>
                 </div>
-                <img src="Images/game6.jpeg" alt="Генератор случайных цветов" class="minigame-box__img">
+                <img src="Images/game6.jpg" alt="Генератор случайных цветов" class="minigame-box__img">
             </article>
         </div>
     </section>
@@ -161,4 +202,5 @@
         <p class="bottom__text">Все права защищены.</p>
     </footer>
 </body>
+
 </html>
