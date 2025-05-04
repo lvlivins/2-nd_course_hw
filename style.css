@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -43,24 +47,6 @@ a {
   padding-bottom: 48px;
   color: #202027;
 }
-.top__btn {
-  font-family: inherit;
-  background: #202027;
-  border-radius: 60px;
-  width: 247px;
-  height: 66px;
-  box-sizing: border-box;
-  text-align: center;
-  border: none;
-  color: #FFFFFF;
-  font-size: 24px;
-  font-weight: 600;
-}
-.top__btn:hover {
-  background-color: white;
-  color: #000000;
-  border: 1px solid #000000;
-}
 .top__overlay-img {
   position: absolute;
   z-index: 1;
@@ -98,7 +84,14 @@ a {
 }
 
 .game-box {
+  position: relative;
+}
+.game-box::after {
   background-color: #000000;
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
 }
 .game-box__title {
   font-size: 64px;
@@ -115,9 +108,90 @@ a {
   color: #FFFFFF;
   padding-bottom: 72px;
 }
+.game-box__card-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  overflow: visible;
+}
+.game-box__card-split {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.game-box__card {
+  height: 473px;
+  width: 378px;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+.game-box__card_var {
+  height: 512px;
+}
+.game-box__card_var-var {
+  height: 551px;
+}
+.game-box__card:hover {
+  transform: scale(1.03);
+  z-index: 2;
+}
+.game-box__img {
+  height: 314px;
+  width: 378px;
+  border-radius: 30px;
+}
+.game-box__card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 32px 36px 32px;
+}
+.game-box__card-text_var {
+  width: 300px;
+}
+.game-box__number {
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 52px;
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  width: 108px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+.game-box__name {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+}
+.game-box__overlay-img {
+  position: absolute;
+  z-index: -1;
+  top: 77px;
+  right: 0px;
+}
+.game-box__star1 {
+  position: absolute;
+  z-index: -1;
+  top: 822px;
+  left: 40px;
+}
+.game-box__star2 {
+  position: absolute;
+  z-index: -1;
+  top: 770px;
+  left: 25px;
+}
 
 .minigame-box {
   background-color: #000000;
+  padding-bottom: 144px;
+  position: relative;
 }
 .minigame-box__title {
   font-size: 64px;
@@ -126,6 +200,96 @@ a {
   color: #FFFFFF;
   padding-top: 46px;
   padding-bottom: 72px;
+}
+.minigame-box__card-box {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.minigame-box__card {
+  height: 500px;
+  width: 1200px;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.minigame-box__card_var {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.minigame-box__card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 48px;
+}
+.minigame-box__text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.minigame-box__name {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+}
+.minigame-box__name_var {
+  width: 450px;
+}
+.minigame-box__description {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.minigame-box__img {
+  height: 500px;
+  width: 600px;
+  border-radius: 30px;
+}
+.minigame-box__overlay-star1 {
+  position: absolute;
+  z-index: 1;
+  top: 126px;
+  right: 45px;
+}
+.minigame-box__overlay-star2 {
+  position: absolute;
+  z-index: 1;
+  top: 93px;
+  right: 124px;
+}
+.minigame-box__overlay-star3 {
+  position: absolute;
+  z-index: 1;
+  bottom: 65px;
+  right: 53px;
+}
+.minigame-box__overlay-star4 {
+  position: absolute;
+  z-index: 1;
+  bottom: 45px;
+  right: 151px;
+}
+
+.common-btn {
+  font-family: inherit;
+  background: #202027;
+  border-radius: 60px;
+  width: 247px;
+  height: 66px;
+  box-sizing: border-box;
+  text-align: center;
+  border: none;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 600;
+}
+.common-btn:hover {
+  background-color: white;
+  color: #000000;
+  border: 1px solid #000000;
 }
 
 .bottom {
