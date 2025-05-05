@@ -94,77 +94,6 @@
         padding-bottom: 72px;
     }
 
-    &__card-box {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 32px;
-        overflow: visible; // чтоб был выход за границы
-    }
-
-    &__card-split {
-        display: flex;
-        flex-direction: column;
-        row-gap: 32px;
-    }
-
-    &__card {
-        height: 473px;
-        width: 378px;
-        background-color: #FFFFFF;
-        border-radius: 30px;
-        transition: transform 0.3s ease;
-        position: relative;
-        z-index: 1;
-
-        &_var {
-            height: 512px;
-        }
-
-        &_var-var {
-            height: 551px;
-        }
-
-        &:hover {
-            transform: scale(1.03);
-            z-index: 2;
-        }
-    }
-
-    &__img {
-        height: 314px;
-        width: 378px;
-        border-radius: 30px;
-    }
-
-    &__card-text {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        padding: 32px 32px 36px 32px;
-
-        &_var {
-            width: 300px;
-        }
-    }
-
-    &__number {
-        font-size: 16px;
-        font-weight: 500;
-        border-radius: 52px;
-        background-color: #F7F7F7;
-        display: flex;
-        justify-content: center;
-        width: 108px;
-        padding-top: 8px;
-        padding-bottom: 10px;
-    }
-
-    &__name {
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 39px;
-    }
-
     &__overlay-img {
         position: absolute;
         z-index: -1;
@@ -187,6 +116,77 @@
     }
 }
 
+.card-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    overflow: visible; // чтоб был выход за границы
+}
+
+.card-split {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.card-game {
+    height: 473px;
+    width: 378px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+
+    &_height-md {
+        height: 512px;
+    }
+
+    &_height-lg {
+        height: 551px;
+    }
+
+    &:hover {
+        transform: scale(1.03);
+        z-index: 2;
+    }
+
+    &__img {
+        height: 314px;
+        width: 378px;
+        border-radius: 30px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 32px 32px 36px 32px;
+
+        &_width {
+            width: 300px;
+        }
+    }
+
+    &__number {
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 52px;
+        background-color: #F7F7F7;
+        display: flex;
+        justify-content: center;
+        width: 108px;
+        padding-top: 8px;
+        padding-bottom: 10px;
+    }
+
+    &__name {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+    }
+}
+
 .minigame-box {
     background-color: #000000;
     padding-bottom: 144px;
@@ -199,62 +199,6 @@
         color: #FFFFFF;
         padding-top: 46px;
         padding-bottom: 72px;
-    }
-
-    &__card-box {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    &__card {
-        height: 500px;
-        width: 1200px;
-        background-color: #FFFFFF;
-        border-radius: 30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        &_var {
-            display: flex;
-            flex-direction: row-reverse;
-        }
-    }
-
-    &__card-text {
-        display: flex;
-        flex-direction: column;
-        gap: 36px;
-        padding: 48px;
-    }
-
-    &__text-box {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    &__name {
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 59px;
-
-        &_var {
-            width: 450px;
-        }
-    }
-
-    &__description {
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 32px;
-    }
-
-    &__img {
-        height: 500px;
-        width: 600px;
-        border-radius: 30px;
     }
 
     &__overlay-star1 {
@@ -283,6 +227,62 @@
         z-index: 1;
         bottom: 45px;
         right: 151px;
+    }
+}
+
+.minicard-box {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.minigame-card {
+    height: 500px;
+    width: 1200px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &_flex {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        padding: 48px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+
+        &_width {
+            width: 450px;
+        }
+    }
+
+    &__description {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+
+    &__img {
+        height: 500px;
+        width: 600px;
+        border-radius: 30px;
     }
 }
 

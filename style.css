@@ -108,67 +108,6 @@ a {
   color: #FFFFFF;
   padding-bottom: 72px;
 }
-.game-box__card-box {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  -moz-column-gap: 32px;
-       column-gap: 32px;
-  overflow: visible;
-}
-.game-box__card-split {
-  display: flex;
-  flex-direction: column;
-  row-gap: 32px;
-}
-.game-box__card {
-  height: 473px;
-  width: 378px;
-  background-color: #FFFFFF;
-  border-radius: 30px;
-  transition: transform 0.3s ease;
-  position: relative;
-  z-index: 1;
-}
-.game-box__card_var {
-  height: 512px;
-}
-.game-box__card_var-var {
-  height: 551px;
-}
-.game-box__card:hover {
-  transform: scale(1.03);
-  z-index: 2;
-}
-.game-box__img {
-  height: 314px;
-  width: 378px;
-  border-radius: 30px;
-}
-.game-box__card-text {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 32px 32px 36px 32px;
-}
-.game-box__card-text_var {
-  width: 300px;
-}
-.game-box__number {
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 52px;
-  background-color: #F7F7F7;
-  display: flex;
-  justify-content: center;
-  width: 108px;
-  padding-top: 8px;
-  padding-bottom: 10px;
-}
-.game-box__name {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 39px;
-}
 .game-box__overlay-img {
   position: absolute;
   z-index: -1;
@@ -188,6 +127,70 @@ a {
   left: 25px;
 }
 
+.card-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  overflow: visible;
+}
+
+.card-split {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.card-game {
+  height: 473px;
+  width: 378px;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+.card-game_height-md {
+  height: 512px;
+}
+.card-game_height-lg {
+  height: 551px;
+}
+.card-game:hover {
+  transform: scale(1.03);
+  z-index: 2;
+}
+.card-game__img {
+  height: 314px;
+  width: 378px;
+  border-radius: 30px;
+}
+.card-game__text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 32px 36px 32px;
+}
+.card-game__text_width {
+  width: 300px;
+}
+.card-game__number {
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 52px;
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  width: 108px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+.card-game__name {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+}
+
 .minigame-box {
   background-color: #000000;
   padding-bottom: 144px;
@@ -200,53 +203,6 @@ a {
   color: #FFFFFF;
   padding-top: 46px;
   padding-bottom: 72px;
-}
-.minigame-box__card-box {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-.minigame-box__card {
-  height: 500px;
-  width: 1200px;
-  background-color: #FFFFFF;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.minigame-box__card_var {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.minigame-box__card-text {
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
-  padding: 48px;
-}
-.minigame-box__text-box {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.minigame-box__name {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 59px;
-}
-.minigame-box__name_var {
-  width: 450px;
-}
-.minigame-box__description {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 32px;
-}
-.minigame-box__img {
-  height: 500px;
-  width: 600px;
-  border-radius: 30px;
 }
 .minigame-box__overlay-star1 {
   position: absolute;
@@ -271,6 +227,55 @@ a {
   z-index: 1;
   bottom: 45px;
   right: 151px;
+}
+
+.minicard-box {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.minigame-card {
+  height: 500px;
+  width: 1200px;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.minigame-card_flex {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.minigame-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 48px;
+}
+.minigame-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.minigame-card__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+}
+.minigame-card__title_width {
+  width: 450px;
+}
+.minigame-card__description {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.minigame-card__img {
+  height: 500px;
+  width: 600px;
+  border-radius: 30px;
 }
 
 .common-btn {
