@@ -8,7 +8,6 @@
         font-weight: 700;
         line-height: 78px;
         letter-spacing: 0px;
-        text-align: left;
         padding-top: 196px;
         padding-bottom: 24px;
         width: 769px;
@@ -23,6 +22,10 @@
         text-align: left;
         padding-bottom: 48px;
         color: #202027;
+
+        &_mob-yes {
+            display: none;
+        }
     }
 
     &__overlay-img {
@@ -30,6 +33,10 @@
         z-index: 1;
         top: 0px;
         right: 0px;
+
+        &_mob-yes {
+            display: none;
+        }
     }
 
     &__overlay-star1 {
@@ -234,10 +241,9 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-}
+} 
 
 .minigame-card {
-    height: 500px;
     width: 1200px;
     background-color: #FFFFFF;
     border-radius: 30px;
@@ -280,8 +286,6 @@
     }
 
     &__img {
-        height: 500px;
-        width: 600px;
         border-radius: 30px;
     }
 }
@@ -291,18 +295,24 @@
     background: #202027;
     border-radius: 60px;
     width: 247px;
-    height: 66px;
+    display: block;
     box-sizing: border-box;
     text-align: center;
-    border: none;
+    border: 1px solid transparent;
     color: #FFFFFF;
     font-size: 24px;
     font-weight: 600;
+    padding: 16px 28px;
+    transition: transform 0.3s ease;
 
     &:hover {
         background-color: white;
         color: #000000;
         border: 1px solid #000000;
+    }
+
+    &_mob-yes {
+        display: none;
     }
 }
 

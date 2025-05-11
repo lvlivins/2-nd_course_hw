@@ -14,45 +14,61 @@
 
 <body>
     <section class="top center">
-        <h1 class="top__title">Добро пожаловать<br>на мой сайт мини-игр</h1>
-        <p class="top__text">Тебе предстоит пройти несколько увлекательных игр.<br>
-            Если готов, нажимай <b>«Поехали!»</b> и <b>приступай.</b></p>
-        <button class="common-btn" type="button">Поехали!</button>
-        <svg class="top__overlay-img" width="587" height="798" viewBox="0 0 587 798" fill="none"
+        <div class="top__content">
+            <h1 class="top__title">Добро пожаловать на&nbsp;мой&nbsp;сайт мини-игр</h1>
+            <p class="top__text top__text_mob-no">Тебе предстоит пройти несколько увлекательных игр.<br>
+                Если готов, нажимай <b>«Поехали!»</b> и <b>приступай.</b></p>
+            <p class="top__text top__text_mob-yes">Тебе предстоит пройти несколько
+                увлекательных&nbsp;игр.&nbsp;Если&nbsp;готов,
+                нажимай&nbsp;<b>«Поехали!»</b>&nbsp;и&nbsp;<b>приступай.</b></p>
+            <a href="#aboutGames" class="common-btn common-btn_mob-no" type="button">Поехали!</a>
+            <a href="#miniGames" class="common-btn common-btn_mob-yes" type="button">Поехали!</a>
+        </div>
+        <svg class="top__overlay-img top__overlay-img_mob-no" width="587" height="798" viewBox="0 0 587 798" fill="none"
             xmlns="http://www.w3.org/2000/svg">
-            <path d="M241.793 -10L318 78.3799L1 153" stroke="#202027" stroke-linecap="round" />
+            <path d="M241.793 -10L318 78.3799L1 153" stroke="#202027" stroke-linecap="round"
+                vector-effect="non-scaling-stroke" />
             <path
                 d="M708.682 48.4061C718.111 51.031 980.516 161.965 980.516 161.965L702.111 191.848L877.994 417.66L630.036 263.412L604.772 524.856L534.884 249.531L301.938 380.493L462.405 188.266L177.63 175.289L445.303 95.0267L246.404 -134.041L526.036 -2.49639L590.031 -256.31L618.768 -1.9517L873.48 -177.398L708.682 48.4061Z"
-                fill="#BCEC30" stroke="#202027" stroke-miterlimit="10" stroke-linecap="round" />
+                fill="#BCEC30" stroke="#202027" stroke-miterlimit="10" stroke-linecap="round"
+                vector-effect="non-scaling-stroke" />
             <path d="M232.082 254H356L214 433" stroke="#202027" stroke-linecap="round" />
-            <path d="M372 458.046L485.76 379L591.882 797" stroke="#202027" stroke-linecap="round" />
+            <path d="M372 458.046L485.76 379L591.882 797" stroke="#202027" stroke-linecap="round"
+                vector-effect="non-scaling-stroke" />
             <path d="M450.159 468L394 526.765L474 594L450.159 468Z" fill="#BCEC30" stroke="#202027"
-                stroke-linecap="round" />
-            <path d="M492 663L526 787" stroke="#202027" stroke-linecap="round" />
+                stroke-linecap="round" vector-effect="non-scaling-stroke" />
+            <path d="M492 663L526 787" stroke="#202027" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+        </svg> <!-- vector-effect="non-scaling-stroke" в path - чтобы обводка не менялась при масштабировании -->
+        <svg class="top__overlay-img top__overlay-img_mob-yes" width="160" height="155" viewBox="0 0 160 155"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M164.226 10.1084C167.072 10.8901 246.284 43.9262 246.284 43.9262L162.242 52.8255L215.335 120.072L140.485 74.1374L132.858 151.995L111.761 70.0034L41.4419 109.004L89.8822 51.7588L3.91711 47.8942L84.7193 23.992L24.6779 -44.2244L109.09 -5.0504L128.408 -80.6361L137.083 -4.88818L213.973 -57.1361L164.226 10.1084Z"
+                fill="#BCEC30" stroke="#202027" stroke-miterlimit="10" stroke-linecap="round"
+                vector-effect="non-scaling-stroke" />
         </svg>
         <svg class="top__overlay-star1" width="83" height="83" viewBox="0 0 83 83" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M52.2402 30.4648L52.3193 30.6807L52.5352 30.7598L81.5586 41.5L52.5352 52.2402L52.3193 52.3193L52.2402 52.5352L41.5 81.5586L30.7598 52.5352L30.6807 52.3193L30.4648 52.2402L1.44043 41.5L30.4648 30.7598L30.6807 30.6807L30.7598 30.4648L41.5 1.44043L52.2402 30.4648Z"
-                stroke="#202027" />
+                stroke="#202027" vector-effect="non-scaling-stroke" vector-effect="non-scaling-stroke" />
         </svg>
         <svg class="top__overlay-star2" width="37" height="37" viewBox="0 0 37 37" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M23.0273 13.6768L23.1074 13.8926L23.3232 13.9727L35.5586 18.5L23.3232 23.0273L23.1074 23.1074L23.0273 23.3232L18.5 35.5586L13.9727 23.3232L13.8926 23.1074L13.6768 23.0273L1.44043 18.5L13.6768 13.9727L13.8926 13.8926L13.9727 13.6768L18.5 1.44043L23.0273 13.6768Z"
-                fill="#BCEC30" stroke="#202027" />
+                fill="#BCEC30" stroke="#202027" vector-effect="non-scaling-stroke" />
         </svg>
         <svg class="top__overlay-star3" width="57" height="57" viewBox="0 0 57 57" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M35.7285 20.9756L35.8086 21.1914L36.0244 21.2715L55.5586 28.5L36.0244 35.7285L35.8086 35.8086L35.7285 36.0244L28.5 55.5586L21.2715 36.0244L21.1914 35.8086L20.9756 35.7285L1.44043 28.5L20.9756 21.2715L21.1914 21.1914L21.2715 20.9756L28.5 1.44043L35.7285 20.9756Z"
-                fill="#BCEC30" stroke="#202027" />
+                fill="#BCEC30" stroke="#202027" vector-effect="non-scaling-stroke" />
         </svg>
         <svg class="top__overlay-star4" width="35" height="35" viewBox="0 0 35 35" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M21.7578 12.9473L21.8379 13.1621L22.0527 13.2422L33.5586 17.5L22.0527 21.7578L21.8379 21.8379L21.7578 22.0527L17.5 33.5586L13.2422 22.0527L13.1621 21.8379L12.9473 21.7578L1.44043 17.5L12.9473 13.2422L13.1621 13.1621L13.2422 12.9473L17.5 1.44043L21.7578 12.9473Z"
-                stroke="#202027" />
+                stroke="#202027" vector-effect="non-scaling-stroke" />
         </svg>
         <!-- <div class="scroll">
             <div class="scroll__box">
@@ -96,7 +112,7 @@
         </div> -->
     </section>
     <section class="game-box center">
-        <h2 class="game-box__title">Об играх</h2>
+        <h2 class="game-box__title" id="aboutGames">Об играх</h2>
         <p class="game-box__text">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может
             поиграть каждый.<br>Все игры доступны для пользования.</p>
         <div class="card-box">
@@ -153,23 +169,23 @@
             xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M311.57 185.339L311.784 185.896L312.295 185.587L479.841 84.2779L380.533 253.018L380.231 253.534L380.791 253.741L564.461 321.569L370.617 349.136L370.025 349.22L370.212 349.788L431.698 535.676L289.288 401.311L288.853 400.9L288.526 401.401L181.527 565.371L197.787 370.255L197.837 369.659L197.241 369.716L2.33031 388.294L165.019 279.354L165.515 279.021L165.099 278.591L29.048 137.787L215.656 197.058L216.226 197.239L216.303 196.647L241.56 2.48716L311.57 185.339Z"
-                stroke="#BCEC30" />
+                stroke="#BCEC30" vector-effect="non-scaling-stroke" />
         </svg>
         <svg class="game-box__star1" width="55" height="55" viewBox="0 0 55 55" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M35.3232 21.2557L35.3825 21.4782L35.5898 21.5774L53.5074 30.2216L34.279 35.3236L34.0565 35.3829L33.9563 35.5901L25.3121 53.5077L20.2101 34.2793L20.1518 34.0569L19.9446 33.9567L2.02605 25.3124L21.2554 20.2105L21.4778 20.1522L21.577 19.9449L30.2213 2.02636L35.3232 21.2557Z"
-                stroke="#BCEC30" />
+                stroke="#BCEC30" vector-effect="non-scaling-stroke" />
         </svg>
         <svg class="game-box__star2" width="32" height="32" viewBox="0 0 32 32" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M20.2172 12.4036L20.2765 12.6251L20.4838 12.7253L30.2506 17.4364L19.7693 20.2177L19.5469 20.2769L19.4467 20.4841L14.7346 30.2509L11.9543 19.7697L11.895 19.5472L11.6888 19.4471L1.92109 14.7349L12.4032 11.9547L12.6247 11.8954L12.7248 11.6891L17.4361 1.92137L20.2172 12.4036Z"
-                stroke="#BCEC30" />
+                stroke="#BCEC30" vector-effect="non-scaling-stroke" />
         </svg>
     </section>
     <section class="minigame-box center">
-        <h2 class="minigame-box__title">Мини-игры</h2>
+        <h2 class="minigame-box__title" id="miniGames">Мини-игры</h2>
         <div class="minicard-box">
             <article id="game1" class="minigame-card">
                 <div class="minigame-card__content">
@@ -227,8 +243,8 @@
                 <div class="minigame-card__content">
                     <div class="minigame-card__text">
                         <h3 class="minigame-card__title minigame-card__title_width">Генератор случайных цветов</h3>
-                        <p class="minigame-card__description">Игра, в которой при клике на кнопку фон страницы меняется
-                            на случайный.</p>
+                        <p class="minigame-card__description">Игра, в которой при клике на&nbsp;кнопку фон страницы
+                            меняется&nbsp;на&nbsp;случайный.</p>
                     </div>
                     <button class="common-btn" type="button">Играть!</button>
                 </div>
@@ -239,30 +255,31 @@
             xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M44.2013 26.2972L44.2596 26.5196L44.4668 26.6198L67.3851 37.6754L42.7902 44.2012L42.5679 44.2594L42.4687 44.4667L31.4121 67.3849L24.8873 42.7902L24.8281 42.5677L24.6207 42.4685L1.70255 31.4119L26.2973 24.8871L26.5197 24.8279L26.6199 24.6207L37.6755 1.70241L44.2013 26.2972Z"
-                stroke="#BCEC30" />
+                stroke="#BCEC30" vector-effect="non-scaling-stroke" />
         </svg>
         <svg class="minigame-box__overlay-star2" width="36" height="36" viewBox="0 0 36 36" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M22.4144 13.5956L22.4673 13.8196L22.6716 13.9257L33.6135 19.5949L21.6166 22.4141L21.3925 22.4669L21.2864 22.6712L15.6163 33.6131L12.798 21.6163L12.7452 21.3922L12.5409 21.2861L1.5981 15.6159L13.5959 12.7977L13.8199 12.7449L13.926 12.5406L19.5953 1.59767L22.4144 13.5956Z"
-                stroke="#BCEC30" />
+                stroke="#BCEC30" vector-effect="non-scaling-stroke" />
         </svg>
         <svg class="minigame-box__overlay-star3" width="69" height="69" viewBox="0 0 69 69" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M43.3496 25.3555L43.4287 25.5713L43.6445 25.6504L67.5586 34.5L43.6445 43.3496L43.4287 43.4287L43.3496 43.6445L34.5 67.5586L25.6504 43.6445L25.5713 43.4287L25.3555 43.3496L1.44043 34.5L25.3555 25.6504L25.5713 25.5713L25.6504 25.3555L34.5 1.44043L43.3496 25.3555Z"
-                stroke="#BCEC30" />
+                stroke="#BCEC30" vector-effect="non-scaling-stroke" />
         </svg>
         <svg class="minigame-box__overlay-star4" width="41" height="41" viewBox="0 0 41 41" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M25.5684 15.1367L25.6475 15.3525L25.8633 15.4316L39.5586 20.5L25.8633 25.5684L25.6475 25.6475L25.5684 25.8633L20.5 39.5586L15.4316 25.8633L15.3525 25.6475L15.1367 25.5684L1.44043 20.5L15.1367 15.4316L15.3525 15.3525L15.4316 15.1367L20.5 1.44043L25.5684 15.1367Z"
-                stroke="#BCEC30" />
+                stroke="#BCEC30" vector-effect="non-scaling-stroke" />
         </svg>
     </section>
     <footer class="bottom center">
         <p class="bottom__text">Все права защищены.</p>
     </footer>
+    <script src="hw-2.js"></script>
 </body>
 
 </html>
