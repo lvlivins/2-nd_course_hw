@@ -1,8 +1,8 @@
 // Задание 1
 let a0;
-a0 = "10";
+a0 = 10;
 alert(a0);
-a0 = "20";
+a0 = 20;
 alert(a0);
 // Задание 2
 const yearCreationIphone = 2007;
