@@ -90,6 +90,7 @@ a {
 
 .game-box {
   position: relative;
+  padding-bottom: 50px;
 }
 .game-box::after {
   background-color: #000000;
@@ -116,7 +117,7 @@ a {
 .game-box__overlay-img {
   position: absolute;
   z-index: -1;
-  top: 77px;
+  top: 111px;
   right: 0px;
 }
 .game-box__star1 {
