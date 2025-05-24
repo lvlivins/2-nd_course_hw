@@ -1,0 +1,129 @@
+.game1-body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    background-color: #E5C288;
+    padding: 16px;
+    border-radius: 16px;
+
+}
+
+.game1-box {
+    position: relative;
+    width: 470px;
+    height: 525px;
+    background-color: #FFF7ED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 16px;
+
+    &__img-box {
+        border-bottom: 2px solid black;
+        width: 470px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img {
+        height: 250px;
+        width: 350px;
+    }
+
+    &__title {
+        padding-top: 24px;
+        padding-bottom: 12px;
+        color: black;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    &__task {
+        padding-bottom: 24px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__txtarea {
+        width: 200px;
+        height: 25px;
+        align-items: center;
+        color: #1e1e1e;
+        font-size: 20px;
+        font-weight: 400;
+        border: 1px solid black;
+        border-radius: 8px;
+        resize: none;
+        text-align: center;
+    }
+
+    &__btn {
+        margin: 12px;
+        margin-bottom: 16px;
+        width: 200px;
+        height: 38px;
+        background-color: #E5C288;
+        border-radius: 8px;
+        border: 1px solid black;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    &__win-txt {
+        font-size: 18px;
+        font-weight: 600;
+        color: darkgreen;
+        display: none;
+    }
+
+    &__nowin-txt {
+        font-size: 18px;
+        font-weight: 600;
+        color: darkred;
+        display: none;
+    }
+
+
+    &__vector-box {
+        position: absolute;
+        bottom: 2px;
+        right: 2px;
+        z-index: 1;
+        display: inline-block;
+
+        &:hover .game1-box__vector-txt{
+            display: block;
+        }
+    }
+
+    &__vector {
+        width: 40px;
+        height: 25px;
+        display: block;
+    }
+
+    &__vector-txt {
+        display: none;
+        position: absolute;
+        background-color: #FFF7ED;
+        border: 0.5px solid black;
+        padding: 5px 10px;
+        border-radius: 4px;
+        bottom: 20px;
+        right: 30px;
+        z-index: 1;
+        margin-bottom: 4px; 
+        width: 250px;
+        font-size: 14px;
+    }
+}
