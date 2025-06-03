@@ -1,30 +1,44 @@
-.game1-body {
+.games-body {
     background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &_game2 {
+        margin-top: 115px;
+        background-image: url(images/game2-background.PNG);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 }
 
-.game1 {
+.games {
     display: flex;
     justify-content: center;
     margin-top: 60px;
     background-color: #E5C288;
     padding: 16px;
     border-radius: 16px;
-
 }
 
-.game1-box {
+.games-box {
     position: relative;
     width: 470px;
-    height: 525px;
     background-color: #FFF7ED;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 2px solid black;
     border-radius: 16px;
+
+    &_game1 {
+        height: 525px;
+    }
+
+    &_game2 {
+        height: 425px;
+    }
 
     &__img-box {
         border-bottom: 2px solid black;
@@ -45,12 +59,21 @@
         color: black;
         font-size: 32px;
         font-weight: 700;
+
+        &_game2 {
+            padding-top: 54px;
+            font-size: 42px;
+        }
     }
 
     &__task {
         padding-bottom: 24px;
         font-size: 16px;
         font-weight: 400;
+
+        &_game2 {
+            font-size: 22px;
+        }
     }
 
     &__txtarea {
@@ -64,6 +87,10 @@
         border-radius: 8px;
         resize: none;
         text-align: center;
+
+        &_game2 {
+            width: 300px;
+        }
     }
 
     &__btn {
@@ -77,6 +104,11 @@
         font-size: 16px;
         font-weight: 600;
         cursor: pointer;
+
+        &_game2 {
+            width: 150px;
+            margin-top: 20px;
+        }
     }
 
     &__win-txt {
@@ -93,7 +125,6 @@
         display: none;
     }
 
-
     &__vector-box {
         position: absolute;
         bottom: 2px;
@@ -101,7 +132,7 @@
         z-index: 1;
         display: inline-block;
 
-        &:hover .game1-box__vector-txt{
+        &:hover .game1-box__vector-txt {
             display: block;
         }
     }
@@ -122,8 +153,16 @@
         bottom: 20px;
         right: 30px;
         z-index: 1;
-        margin-bottom: 4px; 
+        margin-bottom: 4px;
         width: 250px;
         font-size: 14px;
     }
+}
+
+.game2-task {
+    padding-top: 7px;
+    padding-bottom: 14px;
+    color: black;
+    font-size: 68px;
+    font-weight: 700;
 }
