@@ -1,44 +1,48 @@
-const taskElement = document.getElementById('myText');
-const answerInput = document.getElementById('userAnswer');
-const okButton = document.querySelector('.games-box__btn_game2');
+const ArithmeticOperation = document.getElementById('ArithmeticOperation');
+const userAnswer = document.getElementById('userAnswer');
+const okButton = document.getElementById('okButton');
+const winText = document.querySelector('.games-box__win-txt');
+const noWinText = document.querySelector('.games-box__nowin-txt');
 
-function generateTask() {
-    const a = Math.floor(Math.random() * 10) + 1;
-    const b = Math.floor(Math.random() * 10) + 1;
+function ArithmeticProblemRandom() {
+    const number1 = Math.floor(Math.random() * 10) + 1;
+    const number2 = Math.floor(Math.random() * 10) + 1;
     const actions = ['+', '-', '*', '/'];
-    const action = actions[Math.floor(Math.random() * 4)];
+    const randomNumber = parseInt(Math.random() * actions.length); // console.log(actions.length) == 4
+    const action = actions[randomNumber]; // для рандомизированного выбора между 4 элементами в массиве по индексу
 
     if (action === '+') {
-        taskElement.textContent = `${a} + ${b}`;
-        return a + b;
+        ArithmeticOperation.innerText = `${number1} + ${number2}`;
+        return number1 + number2;
     }
     if (action === '-') {
-        const max = Math.max(a, b);
-        const min = Math.min(a, b);
-        taskElement.textContent = `${max} - ${min}`;
-        return max - min;
+        ArithmeticOperation.innerText = `${number1} - ${number2}`;
+        return number1 - number2;
     }
     if (action === '*') {
-        taskElement.textContent = `${a} × ${b}`;
-        return a * b;
+        ArithmeticOperation.innerText = `${number1} × ${number2}`;
+        return number1 * number2;
     } else {
-        taskElement.textContent = `${a * b} ÷ ${a}`;
-        return b;
+        ArithmeticOperation.innerText = `${number1} ÷ ${number2}`;
+        return number1 / number2;
     }
 }
 
-let correctAnswer = generateTask();
+let correctAnswer = ArithmeticProblemRandom();
 
-okButton.onclick = () => {
-    const userAnswer = Number(answerInput.value);
+okButton.onclick = function () {
+    // const userFinalAnswer = Number(userAnswer.value); // .value для <input>, <textarea>, то что ввел user
+    const answerText = userAnswer.value.replace(',', '.'); //   при вводе с запятыми - конверт в точки для понимания ответа js
+    const userFinalAnswer = Number(answerText);
 
-    if (userAnswer === correctAnswer) {
-        alert('Верно!');
-        correctAnswer = generateTask();
+    if (userFinalAnswer === correctAnswer) {
+        winText.style.display = 'block'; // display = 'block'; 
+        noWinText.style.display = 'none'; // display = 'none'; 
+        correctAnswer = ArithmeticProblemRandom(); // для создания новой задачи и так далее 
     } else {
-        alert(`Неверно!`);
+        noWinText.style.display = 'block';
+        winText.style.display = 'none';
     }
 
-    answerInput.value = '';
-    answerInput.focus();
+    userAnswer.value = ''; // чтоб чистилось поле ввода для нового примера 
 };

@@ -53,8 +53,8 @@ checkNumber.onclick = function () {
     }
 
     if (number === secretNumber) {
-        winText.style.display = 'block';
-        noWinText.style.display = 'none';
+        winText.style.display = 'block'; // display = 'block'; 
+        noWinText.style.display = 'none'; // display = 'none'; 
         return;
     }
     else {
