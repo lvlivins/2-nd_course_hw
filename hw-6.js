@@ -1,7 +1,3 @@
-// let products = ['Кресло', 'Стул', 'Стол'];
-
-// products[products.length] = 'Диван';
-// console.log(products); // Результат: ['Кресло', 'Стул', 'Стол', 'Диван']
 // (1) 
 const number1 = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < number1.length; i++) {
@@ -55,17 +51,58 @@ const number9 = [
 ];
 const togetherNumber = [];
 
-for (let arrIn of number9) {
-    for (element of arrIn) {
+for (let massiveNumber of number9) {
+    for (element of massiveNumber) {
         togetherNumber.push(element)
     }
 }
 console.log(togetherNumber);
 // (10)
 const number10 = [2, 8, 5, 0];
-for (elementNumber10 of number10) {
+let sumNumber10 = 0; // c const не выйдет !!! 
+
+for (let i = 0; i < number10.length; i++) {
+    sumNumber10 += number10[i];
+    console.log(sumNumber10);
 }
-10
-15
-15
 // (11)
+const number11 = [2, 5, 8];
+const squareNumber = number11.map(function (finalResult) {
+    return finalResult ** 2;
+});
+console.log(squareNumber);
+// (12)
+const number12 = ['My', 'name', 'is', 'SlimShady'];
+const lengthNumber = number12.map(function (finalLength) {
+    return finalLength.length;
+});
+console.log(lengthNumber);
+// (13)
+const number13 = [-2, 5, -8];
+const negativeNumber = number13.filter(function (negativeResult) {
+    return negativeResult < 0;
+});
+console.log(negativeNumber);
+// (14)
+const number14 = [];
+for (let i = 0; i < 10; i++) {
+    const randomNumber = parseInt((Math.random() * 10) + 1);
+    number14.push(randomNumber);
+}
+const evenNumber14 = number14.filter(function (evenNumber) {
+    return evenNumber % 2 == 0;
+});
+console.log(number14);
+console.log(evenNumber14);
+// (15)
+const number15 = [];
+for (let i = 0; i < 6; i++) {
+    const randomNumber15 = parseInt((Math.random() * 10) + 1);
+    number15.push(randomNumber15);
+}
+const arithmeticAverage = number15.reduce(function (a, b) {
+    return a + b / number15.length;
+}, 0);
+
+console.log(number15);
+console.log(arithmeticAverage);
