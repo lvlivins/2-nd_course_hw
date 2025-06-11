@@ -5,10 +5,10 @@ const winText = document.querySelector('.games-box__win-txt');
 const noWinText = document.querySelector('.games-box__nowin-txt');
 
 function ArithmeticProblemRandom() {
-    const number1 = parseInt(Math.random() * 10) + 1;
-    const number2 = parseInt(Math.random() * 10) + 1;
+    const number1 = Math.floor(Math.random() * 10) + 1;
+    const number2 = Math.floor(Math.random() * 10) + 1;
     const actions = ['+', '-', '*', '/'];
-    const randomNumber = parseInt(Math.random() * actions.length); // console.log(actions.length) == 4
+    const randomNumber = Math.floor(Math.random() * actions.length); // console.log(actions.length) == 4
     const action = actions[randomNumber]; // для рандомизированного выбора между 4 элементами в массиве по индексу
 
     if (action === '+') {
