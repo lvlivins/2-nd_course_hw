@@ -22,11 +22,11 @@ console.log(joinedNumber);
 const number4 = [];
 
 for (let i = 0; i < 3; i++) {
-    const massiveNumber = []; 
+    const massiveNumber = []; //number4.push([1, 1, 1])
     for (let m = 0; m < 1; m++) {
         massiveNumber.push(1, 1, 1);
     }
-    number4.push(massiveNumber); 
+    number4.push(massiveNumber);
 }
 
 console.log(number4);
@@ -121,7 +121,7 @@ console.log(evenNumber14);
 const number15 = [];
 
 for (let i = 0; i < 6; i++) {
-    const randomNumber15 = Math.floor((Math.random() * 10) + 1); // parseInt() ожидает на вход строчное значение / Math.floor() работает с числами 
+    const randomNumber15 = Math.floor((Math.random() * 10) + 1); // parseInt() ожидает на вход строчное значение / Math.floor() работает с числами, в рандомизировании лучше округление в меньшую сторону 
     number15.push(randomNumber15);
 }
 
