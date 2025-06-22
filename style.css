@@ -364,7 +364,7 @@ a {
 .games-box_game3 {
   height: 385px;
 }
-.games-box_game4 {
+.games-box_game5 {
   margin-top: 16px;
   height: 650px;
   width: 500px;
@@ -398,7 +398,7 @@ a {
   display: grid;
   justify-items: center;
 }
-.games-box__title_game4 {
+.games-box__title_game5 {
   padding-top: 36px;
   font-size: 42px;
 }
@@ -519,7 +519,7 @@ a {
   bottom: 250px;
 }
 
-.game4-box__png {
+.game5-box__png {
   position: absolute;
   z-index: 1;
   height: 300px;
@@ -528,13 +528,13 @@ a {
   border-radius: 8px;
 }
 
-.game4-taskbox {
+.game5-taskbox {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
-.game4-taskbox__question {
+.game5-taskbox__question {
   padding-top: 15px;
   padding-left: 50px;
   padding-right: 50px;
@@ -544,13 +544,13 @@ a {
   font-size: 24px;
   text-align: center;
 }
-.game4-taskbox__answers-box {
+.game5-taskbox__answers-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
 }
-.game4-taskbox__answer {
+.game5-taskbox__answer {
   width: 250px;
   height: 38px;
   background-color: #fae5c4;
@@ -563,7 +563,7 @@ a {
   cursor: pointer;
 }
 
-.game4-resultbox {
+.game5-resultbox {
   position: absolute;
   width: 150px;
   z-index: 2;
@@ -577,7 +577,7 @@ a {
   align-items: center;
   text-align: center;
 }
-.game4-resultbox__number {
+.game5-resultbox__number {
   margin-top: 20px;
   font-size: 46px;
   font-weight: 600;

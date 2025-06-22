@@ -48,7 +48,7 @@
         height: 385px;
     }
 
-    &_game4 {
+    &_game5 {
         margin-top: 16px;
         height: 650px;
         width: 500px;
@@ -87,7 +87,7 @@
             justify-items: center;
         }
 
-        &_game4 {
+        &_game5 {
             padding-top: 36px;
             font-size: 42px;
         }
@@ -260,7 +260,7 @@
     }
 }
 
-.game4-box {
+.game5-box {
     &__png {
         position: absolute;
         z-index: 1;
@@ -271,7 +271,7 @@
     }
 }
 
-.game4-taskbox {
+.game5-taskbox {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -309,7 +309,7 @@
     }
 }
 
-.game4-resultbox {
+.game5-resultbox {
     position: absolute;
     width: 150px;
     z-index: 2;

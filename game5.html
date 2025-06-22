@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переверни текст</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body class="games-body games-body_game5">
+    <div class="games-box games-box_game5">
+        <h1 class="games-box__title games-box__title_game5">Викторина</h1>
+        <div class="game5-taskbox">
+            <p class="game5-taskbox__question" id="#">Сколько у человека пальцев на одной руке?</p> <!-- Здесь вопрос-->
+            <div class="game5-taskbox__answers-box">
+                <button class="game5-taskbox__answer" data-answer="1">Первый</button> <!-- Здесь варианты ответов -->
+                <button class="game5-taskbox__answer" data-answer="2">Второй</button>
+                <button class="game5-taskbox__answer" data-answer="3">Третий</button>
+            </div>
+        </div>
+        <div class="game5-resultbox"> Колличество правильных ответов
+            <p class="game5-resultbox__number"></p>
+        </div>
+        <div class="game5-box">
+            <img src="Images/game5-character.png" alt="Викторина" class="game5-box__png">
+        </div>
+    </div>
+    <script src="game5.js"></script>
+</body>
+
+</html>
