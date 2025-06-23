@@ -365,7 +365,7 @@ a {
   height: 385px;
 }
 .games-box_game5 {
-  margin-top: 16px;
+  margin-top: 32px;
   height: 650px;
   width: 500px;
   background-color: #fffde1;
@@ -438,7 +438,7 @@ a {
   display: grid;
   align-items: center;
   justify-items: start;
-  color: #999;
+  color: black;
 }
 .games-box__btn {
   margin: 12px;
@@ -479,7 +479,8 @@ a {
   border-bottom: 0.5px solid black;
   width: 320px;
   height: 60px;
-  font-size: 14px;
+  font-size: 38px;
+  text-align: center;
   font-family: inherit;
   font-weight: 600;
 }
@@ -519,15 +520,6 @@ a {
   bottom: 250px;
 }
 
-.game5-box__png {
-  position: absolute;
-  z-index: 1;
-  height: 300px;
-  bottom: 0px;
-  left: 0px;
-  border-radius: 8px;
-}
-
 .game5-taskbox {
   display: flex;
   flex-direction: column;
@@ -548,7 +540,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 .game5-taskbox__answer {
   width: 250px;
@@ -561,6 +553,10 @@ a {
   font-family: inherit;
   font-weight: 600;
   cursor: pointer;
+}
+.game5-taskbox__answer:hover {
+  transform: scale(1.02);
+  z-index: 1;
 }
 
 .game5-resultbox {
@@ -589,6 +585,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.game5-box__png {
+  position: absolute;
+  height: 290px;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 8px;
 }
 
 @media (max-width: 768px) {
