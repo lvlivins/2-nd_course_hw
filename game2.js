@@ -11,7 +11,7 @@ function ArithmeticProblemRandom() {
     const randomNumber = Math.floor(Math.random() * actions.length); // console.log(actions.length) == 4
     const action = actions[randomNumber]; // для рандомизированного выбора между 4 элементами в массиве по индексу
 
-    if (action === '+') {
+    if (action === '+' ) {
         ArithmeticOperation.innerText = `${number1} + ${number2}`;
         return number1 + number2;
     }
