@@ -48,6 +48,11 @@
         height: 385px;
     }
 
+    &_game4 {
+        width: 425px;
+        height: 550px;
+    }
+
     &_game5 {
         margin-top: 32px;
         height: 650px;
@@ -68,6 +73,11 @@
         width: 350px;
     }
 
+    &__img-game4 {
+        height: 220px;
+        width: 220px;
+    }
+
     &__title {
         padding-top: 24px;
         padding-bottom: 12px;
@@ -85,6 +95,13 @@
             font-size: 38px;
             display: grid;
             justify-items: center;
+        }
+
+        &_game4 {
+            font-size: 28px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
         }
 
         &_game5 {
@@ -160,6 +177,10 @@
         }
     }
 
+    &__win-game4 {
+        padding-top: 15px;
+    }
+
     &__win-txt {
         font-size: 18px;
         font-weight: 600;
@@ -173,6 +194,15 @@
         color: darkred;
         display: none;
     }
+
+    &__draw-txt {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgb(190, 126, 5);
+        display: none;
+    }
+
+
 
 
     // &__vector-box {
@@ -260,6 +290,28 @@
         bottom: 250px;
     }
 }
+
+.user-box {
+    display: flex;
+    gap: 15px;
+    padding-top: 25px;
+
+    &__answer {
+        background-color: transparent;
+
+        &:hover {
+            transform: scale(1.05);
+            z-index: 1;
+        }
+    }
+
+    &__png {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+    }
+}
+
 
 .game5-taskbox {
     display: flex;

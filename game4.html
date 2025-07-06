@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Камень, ножницы, бумага</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body class="games-body">
+    <div class="games">
+        <div class="games-box games-box_game4">
+            <div class="games-box__img-box">
+                <img src="Images/game4-hands.PNG" alt="Камень, ножницы, бумага" class="games-box__img-game4">
+            </div>
+            <h1 class="games-box__title games-box__title_game4">Камень, ножницы, бумага</h1>
+            <div class="user-box"> <!-- Здесь выбор пользователя -->
+                <button class="user-box__answer" id="userAnswer1">
+                    <img class="user-box__png" src="Images/game4-stone.png" alt="Камень">
+                </button>
+                <button class="user-box__answer" id="userAnswer2">
+                    <img class="user-box__png" src="Images/game4-scissors.png" alt="Ножницы">
+                </button>
+                <button class="user-box__answer" id="userAnswer3">
+                    <img class="user-box__png" src="Images/game4-paper.png" alt="Бумага">
+                </button>
+            </div>
+            <div class="games-box__win-game4">
+                <p class="games-box__win-txt" id="winText1">У соперника ножницы. Ты победил!</p>
+                <p class="games-box__win-txt" id="winText2">У соперника бумага. Ты победил!</p>
+                <p class="games-box__win-txt" id="winText3">У соперника камень. Ты победил!</p>
+                <p class="games-box__nowin-txt" id="noWinText1">Проиграл! У соперника камень.</p>
+                <p class="games-box__nowin-txt" id="noWinText2">Проиграл! У соперника ножницы.</p>
+                <p class="games-box__nowin-txt" id="noWinText3">Проиграл! У соперника бумага.</p>
+                <p class="games-box__draw-txt" id="drawText">Ничья!</p>
+            </div>
+        </div>
+    </div>
+    <script src="game4.js"></script>
+</body>
+
+</html>

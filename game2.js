@@ -4,6 +4,7 @@ const okButton = document.getElementById('okButton');
 const winText = document.querySelector('.games-box__win-txt');
 const noWinText = document.querySelector('.games-box__nowin-txt');
 
+
 function ArithmeticProblemRandom() {
     const number1 = Math.floor(Math.random() * 10) + 1;
     const number2 = Math.floor(Math.random() * 10) + 1;

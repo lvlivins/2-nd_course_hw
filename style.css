@@ -364,6 +364,10 @@ a {
 .games-box_game3 {
   height: 385px;
 }
+.games-box_game4 {
+  width: 425px;
+  height: 550px;
+}
 .games-box_game5 {
   margin-top: 32px;
   height: 650px;
@@ -381,6 +385,10 @@ a {
   height: 250px;
   width: 350px;
 }
+.games-box__img-game4 {
+  height: 220px;
+  width: 220px;
+}
 .games-box__title {
   padding-top: 24px;
   padding-bottom: 12px;
@@ -397,6 +405,12 @@ a {
   font-size: 38px;
   display: grid;
   justify-items: center;
+}
+.games-box__title_game4 {
+  font-size: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
 }
 .games-box__title_game5 {
   padding-top: 36px;
@@ -461,6 +475,9 @@ a {
   width: 320px;
   height: 30px;
 }
+.games-box__win-game4 {
+  padding-top: 15px;
+}
 .games-box__win-txt {
   font-size: 18px;
   font-weight: 600;
@@ -471,6 +488,12 @@ a {
   font-size: 18px;
   font-weight: 600;
   color: darkred;
+  display: none;
+}
+.games-box__draw-txt {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(190, 126, 5);
   display: none;
 }
 .games-box__answer {
@@ -518,6 +541,24 @@ a {
 .game3__vector_png5 {
   left: 50px;
   bottom: 250px;
+}
+
+.user-box {
+  display: flex;
+  gap: 15px;
+  padding-top: 25px;
+}
+.user-box__answer {
+  background-color: transparent;
+}
+.user-box__answer:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+.user-box__png {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
 }
 
 .game5-taskbox {
