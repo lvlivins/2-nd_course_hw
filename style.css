@@ -88,6 +88,41 @@ a {
   padding-right: calc(50% - 600px);
 }
 
+.scroll {
+  height: 90px;
+  width: 100%;
+  background-color: #BCEC30;
+  z-index: 1;
+  position: absolute;
+  top: 710px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.scroll__box {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  flex-direction: row;
+  gap: 51px;
+  align-items: center;
+  height: 100%;
+  animation: scroll-left 15s linear infinite;
+}
+.scroll__text {
+  font-size: 30px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
 .game-box {
   position: relative;
   padding-bottom: 50px;
@@ -707,6 +742,20 @@ a {
     z-index: 1;
     left: 91px;
     top: 64px;
+  }
+  .scroll {
+    height: 50px;
+    top: 650px;
+  }
+  .scroll__box {
+    gap: 28px;
+  }
+  .scroll__text {
+    font-size: 16px;
+  }
+  .scroll__svg {
+    width: 19px;
+    height: 19px;
   }
   .common-btn {
     width: 285px;

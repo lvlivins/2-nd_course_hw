@@ -85,6 +85,25 @@
 
     }
 
+    .scroll {
+        height: 50px;
+        top: 650px;
+
+        &__box {
+            gap: 28px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+
+        &__svg {
+            width: 19px;
+            height: 19px;
+        }
+
+    }
+
     .common-btn {
         width: 285px;
         font-size: 16px;
