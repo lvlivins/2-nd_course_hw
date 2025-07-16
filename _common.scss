@@ -73,6 +73,44 @@
     padding-right: calc(50% - 600px);
 }
 
+.scroll {
+    height: 90px;
+    width: 100%;
+    background-color: #BCEC30;
+    z-index: 1;
+    position: absolute;
+    top: 710px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    &__box {
+        display: flex;
+        width: max-content;
+        flex-direction: row;
+        gap: 51px;
+        align-items: center;
+        height: 100%;
+        animation: scroll-left 15s linear infinite;
+    }
+
+    &__text {
+        font-size: 30px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
 .game-box {
     position: relative;
     padding-bottom: 50px;
