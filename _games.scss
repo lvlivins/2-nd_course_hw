@@ -15,6 +15,24 @@
     &_game3 {
         margin-top: 85px;
     }
+    
+    &__box {
+        cursor: pointer;
+    }
+
+    &__back-btn {
+        position: absolute;
+        z-index: 2;
+        top: 10px;
+        left: 20px;
+        max-height: 150px;
+        max-width: 150px;
+
+        &_game2 {
+            left: 100px;
+        }
+
+    }
 }
 
 .games {
