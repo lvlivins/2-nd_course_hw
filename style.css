@@ -362,7 +362,7 @@ a {
 }
 .games-body_game2 {
   margin-top: 115px;
-  background-image: url(Images/game2-background.jpg);
+  background-image: black;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -370,19 +370,14 @@ a {
 .games-body_game3 {
   margin-top: 85px;
 }
-.games-body__box {
-  cursor: pointer;
-}
 .games-body__back-btn {
-  position: absolute;
-  z-index: 2;
+  z-index: 1;
   top: 10px;
   left: 20px;
   max-height: 150px;
   max-width: 150px;
-}
-.games-body__back-btn_game2 {
-  left: 100px;
+  cursor: pointer;
+  position: absolute;
 }
 
 .games {
