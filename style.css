@@ -762,6 +762,7 @@ a {
   }
   .scroll__text {
     font-size: 16px;
+    text-transform: uppercase;
   }
   .scroll__svg {
     width: 19px;
@@ -816,7 +817,7 @@ a {
   .minicard-box {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 23px;
     align-items: center;
   }
   .minigame-card {
