@@ -858,6 +858,9 @@ a {
     font-size: 16px;
     line-height: 20px;
   }
+  .minigame-card__img {
+    height: 285px;
+  }
   .bottom {
     height: 100px;
   }
