@@ -329,7 +329,7 @@ a {
   color: #FFFFFF;
   font-size: 24px;
   font-weight: 600;
-  padding: 16px 28px;
+  padding: 16px 28px 16px 28px;
   transition: transform 0.3s ease;
 }
 .common-btn:hover {
@@ -825,15 +825,11 @@ a {
     display: flex;
     flex-direction: column-reverse;
   }
-  .minigame-card_flex {
-    display: flex;
-    flex-direction: column-reverse;
-  }
   .minigame-card__content {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding: 29px 29px 32px 29px;
+    padding: 29px 29px 34px 29px;
   }
   .minigame-card__text {
     display: flex;
