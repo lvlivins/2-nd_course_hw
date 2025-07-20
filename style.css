@@ -858,4 +858,86 @@ a {
     font-size: 16px;
     line-height: 20px;
   }
+  .games-box_game1 {
+    width: 280px;
+    height: 420px;
+  }
+  .games-box_game2 {
+    width: 300px;
+  }
+  .games-box_game3 {
+    width: 300px;
+  }
+  .games-box_game4 {
+    width: 300px;
+  }
+  .games-box_game5 {
+    width: 300px;
+    margin-top: 55px;
+  }
+  .games-box_game6 {
+    width: 300px;
+  }
+  .games-box__img-box {
+    border-bottom: 1px solid black;
+  }
+  .games-box__img {
+    height: 150px;
+    width: 200px;
+  }
+  .games-box__answer {
+    width: 220px;
+  }
+  .games-box__title_game2 {
+    font-size: 36px;
+  }
+  .games-box__title_game3 {
+    font-size: 36px;
+  }
+  .games-box__title_game5 {
+    font-size: 36px;
+  }
+  .games-box__title_game6 {
+    font-size: 28px;
+  }
+  .games-box__txtarea_game2 {
+    width: 200px;
+  }
+  .games-box__txtarea_game3 {
+    width: 200px;
+  }
+  .games-box__btn_game3 {
+    width: 220px;
+  }
+  .games-body__back-btn {
+    max-height: 50px;
+    max-width: 50px;
+  }
+  .user-box__png {
+    width: 70px;
+    height: 70px;
+  }
+  .game5-taskbox__question {
+    padding: 0px 0px 5px 0px;
+  }
+  .game5-taskbox__answer {
+    width: 200px;
+    height: 40px;
+  }
+  .game5-taskbox__answers-box {
+    gap: 15px;
+  }
+  .game5-resultbox {
+    right: 10px;
+    bottom: 170px;
+    font-size: 14px;
+  }
+  .game5-resultbox__number {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+  }
+  .game5-box__png {
+    height: 240px;
+  }
 }/*# sourceMappingURL=style.css.map */
