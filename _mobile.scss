@@ -184,7 +184,7 @@
             display: flex;
             flex-direction: column;
             gap: 32px;
-            padding: 29px 29px 33px 29px;
+            padding: 29px 29px 32px 29px;
         }
 
         &__text {
@@ -202,19 +202,11 @@
                 width: 280px;
             }
 
-            &_var1 {
-                display: none;
-            }
-
         }
 
         &__description {
             font-size: 16px;
             line-height: 20px;
-        }
-
-        &__img {
-            height: 285px;
         }
     }
 

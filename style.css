@@ -308,9 +308,6 @@ a {
 .minigame-card__title_width {
   width: 450px;
 }
-.minigame-card__title_var2 {
-  display: none;
-}
 .minigame-card__description {
   font-size: 24px;
   font-weight: 400;
@@ -836,7 +833,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding: 29px 29px 33px 29px;
+    padding: 29px 29px 32px 29px;
   }
   .minigame-card__text {
     display: flex;
@@ -851,15 +848,9 @@ a {
   .minigame-card__title_width {
     width: 280px;
   }
-  .minigame-card__title_var1 {
-    display: none;
-  }
   .minigame-card__description {
     font-size: 16px;
     line-height: 20px;
-  }
-  .minigame-card__img {
-    height: 285px;
   }
   .bottom {
     height: 100px;
