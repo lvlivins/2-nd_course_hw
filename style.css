@@ -308,6 +308,9 @@ a {
 .minigame-card__title_width {
   width: 450px;
 }
+.minigame-card__title_var2 {
+  display: none;
+}
 .minigame-card__description {
   font-size: 24px;
   font-weight: 400;
@@ -817,7 +820,7 @@ a {
   .minicard-box {
     display: flex;
     flex-direction: column;
-    gap: 23px;
+    gap: 24px;
     align-items: center;
   }
   .minigame-card {
@@ -847,6 +850,9 @@ a {
   }
   .minigame-card__title_width {
     width: 280px;
+  }
+  .minigame-card__title_var1 {
+    display: none;
   }
   .minigame-card__description {
     font-size: 16px;

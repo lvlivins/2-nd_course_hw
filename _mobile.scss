@@ -166,7 +166,7 @@
     .minicard-box {
         display: flex;
         flex-direction: column;
-        gap: 23px;
+        gap: 24px;
         align-items: center;
     }
 
@@ -201,6 +201,11 @@
             &_width {
                 width: 280px;
             }
+
+            &_var1 {
+                display: none;
+            }
+
         }
 
         &__description {
