@@ -270,38 +270,6 @@
     font-weight: 700;
 }
 
-.game3__vector {
-    height: 250px;
-    width: 250px;
-    position: absolute;
-    z-index: -1;
-
-    &_png1 {
-        bottom: 80px;
-        right: 250px;
-    }
-
-    &_png2 {
-        top: 0px;
-        left: 400px;
-    }
-
-    &_png3 {
-        bottom: 0px;
-        left: 300px;
-    }
-
-    &_png4 {
-        top: 30px;
-        right: 30px;
-    }
-
-    &_png5 {
-        left: 50px;
-        bottom: 250px;
-    }
-}
-
 .user-box {
     display: flex;
     gap: 15px;
