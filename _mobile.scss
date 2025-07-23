@@ -95,6 +95,7 @@
 
         &__text {
             font-size: 16px;
+            text-transform: uppercase;
         }
 
         &__svg {
@@ -174,16 +175,11 @@
         display: flex;
         flex-direction: column-reverse;
 
-        &_flex {
-            display: flex;
-            flex-direction: column-reverse;
-        }
-
         &__content {
             display: flex;
             flex-direction: column;
             gap: 32px;
-            padding: 29px 29px 32px 29px;
+            padding: 29px 29px 34px 29px;
         }
 
         &__text {
@@ -200,6 +196,7 @@
             &_width {
                 width: 280px;
             }
+
         }
 
         &__description {
@@ -219,4 +216,116 @@
             line-height: 20px;
         }
     }
+
+    .games-box {
+
+        &_game1 {
+            width: 280px;
+            height: 420px;
+        }
+
+        &_game2 {
+            width: 300px;
+        }
+
+        &_game3 {
+            width: 300px;
+        }
+
+        &_game4 {
+            width: 300px;
+        }
+
+        &_game5 {
+            width: 300px;
+            margin-top: 55px;
+        }
+
+        &_game6 {
+            width: 300px;
+        }
+
+        &__img-box {
+            border-bottom: 1px solid black;
+        }
+
+        &__img {
+            height: 150px;
+            width: 200px;
+        }
+
+        &__answer {
+            width: 220px
+        }
+
+        &__title_game2 {
+            font-size: 36px;
+        }
+
+        &__title_game3 {
+            font-size: 36px;
+        }
+
+        &__title_game5 {
+            font-size: 36px;
+        }
+
+        &__title_game6 {
+            font-size: 28px;
+
+        }
+
+        &__txtarea_game2 {
+            width: 200px;
+        }
+
+        &__txtarea_game3 {
+            width: 200px;
+        }
+
+        &__btn_game3 {
+            width: 220px;
+        }
+    }
+
+    .games-body__back-btn {
+        max-height: 50px;
+        max-width: 50px;
+    }
+
+    .user-box__png {
+        width: 70px;
+        height: 70px;
+    }
+
+    .game5-taskbox__question {
+        padding: 0px 0px 5px 0px;
+    }
+
+    .game5-taskbox__answer {
+        width: 200px;
+        height: 40px;
+    }
+
+    .game5-taskbox__answers-box {
+        gap: 15px;
+    }
+
+    .game5-resultbox {
+        right: 10px;
+        bottom: 170px;
+        font-size: 14px;
+
+        &__number {
+            width: 40px;
+            height: 40px;
+            font-size: 30px;
+        }
+    }
+
+    .game5-box__png {
+        height: 240px;
+    }
+
+
 }

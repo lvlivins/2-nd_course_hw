@@ -32,13 +32,12 @@ function ArithmeticProblemRandom() {
 let correctAnswer = ArithmeticProblemRandom();
 
 okButton.onclick = function () {
-    // const userFinalAnswer = Number(userAnswer.value); // .value для <input>, <textarea>, то что ввел user
     const answerText = userAnswer.value.replace(',', '.'); //   при вводе с запятыми - конверт в точки для понимания ответа js
     const userFinalAnswer = Number(answerText);
 
     if (userFinalAnswer === correctAnswer) {
-        winText.style.display = 'block'; // display = 'block'; 
-        noWinText.style.display = 'none'; // display = 'none'; 
+        winText.style.display = 'block'; 
+        noWinText.style.display = 'none';
         correctAnswer = ArithmeticProblemRandom(); // для создания новой задачи и так далее 
     } else {
         noWinText.style.display = 'block';
