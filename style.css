@@ -562,33 +562,6 @@ a {
   font-weight: 700;
 }
 
-.game3__vector {
-  height: 250px;
-  width: 250px;
-  position: absolute;
-  z-index: -1;
-}
-.game3__vector_png1 {
-  bottom: 80px;
-  right: 250px;
-}
-.game3__vector_png2 {
-  top: 0px;
-  left: 400px;
-}
-.game3__vector_png3 {
-  bottom: 0px;
-  left: 300px;
-}
-.game3__vector_png4 {
-  top: 30px;
-  right: 30px;
-}
-.game3__vector_png5 {
-  left: 50px;
-  bottom: 250px;
-}
-
 .user-box {
   display: flex;
   gap: 15px;
