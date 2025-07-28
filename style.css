@@ -113,6 +113,7 @@ a {
   font-size: 30px;
   font-weight: 700;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 
 @keyframes scroll-left {
@@ -210,7 +211,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 32px 32px 36px 32px;
+  padding: 30px 32px 36px 32px;
 }
 .card-game__text_width {
   width: 300px;
@@ -328,7 +329,7 @@ a {
   color: #FFFFFF;
   font-size: 24px;
   font-weight: 600;
-  padding: 16px 28px;
+  padding: 16px 28px 16px 28px;
   transition: transform 0.3s ease;
 }
 .common-btn:hover {
@@ -362,13 +363,22 @@ a {
 }
 .games-body_game2 {
   margin-top: 115px;
-  background-image: url(Images/game2-background.jpg);
+  background-image: black;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .games-body_game3 {
   margin-top: 85px;
+}
+.games-body__back-btn {
+  z-index: 1;
+  top: 10px;
+  left: 20px;
+  max-height: 150px;
+  max-width: 150px;
+  cursor: pointer;
+  position: absolute;
 }
 
 .games {
@@ -500,6 +510,7 @@ a {
   font-size: 16px;
   font-family: inherit;
   font-weight: 600;
+  color: black;
   cursor: pointer;
 }
 .games-box__btn_game2 {
@@ -549,33 +560,6 @@ a {
   color: black;
   font-size: 68px;
   font-weight: 700;
-}
-
-.game3__vector {
-  height: 250px;
-  width: 250px;
-  position: absolute;
-  z-index: -1;
-}
-.game3__vector_png1 {
-  bottom: 80px;
-  right: 250px;
-}
-.game3__vector_png2 {
-  top: 0px;
-  left: 400px;
-}
-.game3__vector_png3 {
-  bottom: 0px;
-  left: 300px;
-}
-.game3__vector_png4 {
-  top: 30px;
-  right: 30px;
-}
-.game3__vector_png5 {
-  left: 50px;
-  bottom: 250px;
 }
 
 .user-box {
@@ -752,6 +736,7 @@ a {
   }
   .scroll__text {
     font-size: 16px;
+    text-transform: uppercase;
   }
   .scroll__svg {
     width: 19px;
@@ -814,15 +799,11 @@ a {
     display: flex;
     flex-direction: column-reverse;
   }
-  .minigame-card_flex {
-    display: flex;
-    flex-direction: column-reverse;
-  }
   .minigame-card__content {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding: 29px 29px 32px 29px;
+    padding: 29px 29px 34px 29px;
   }
   .minigame-card__text {
     display: flex;
@@ -850,5 +831,87 @@ a {
     padding-top: 40px;
     font-size: 16px;
     line-height: 20px;
+  }
+  .games-box_game1 {
+    width: 280px;
+    height: 420px;
+  }
+  .games-box_game2 {
+    width: 300px;
+  }
+  .games-box_game3 {
+    width: 300px;
+  }
+  .games-box_game4 {
+    width: 300px;
+  }
+  .games-box_game5 {
+    width: 300px;
+    margin-top: 55px;
+  }
+  .games-box_game6 {
+    width: 300px;
+  }
+  .games-box__img-box {
+    border-bottom: 1px solid black;
+  }
+  .games-box__img {
+    height: 150px;
+    width: 200px;
+  }
+  .games-box__answer {
+    width: 220px;
+  }
+  .games-box__title_game2 {
+    font-size: 36px;
+  }
+  .games-box__title_game3 {
+    font-size: 36px;
+  }
+  .games-box__title_game5 {
+    font-size: 36px;
+  }
+  .games-box__title_game6 {
+    font-size: 28px;
+  }
+  .games-box__txtarea_game2 {
+    width: 200px;
+  }
+  .games-box__txtarea_game3 {
+    width: 200px;
+  }
+  .games-box__btn_game3 {
+    width: 220px;
+  }
+  .games-body__back-btn {
+    max-height: 50px;
+    max-width: 50px;
+  }
+  .user-box__png {
+    width: 70px;
+    height: 70px;
+  }
+  .game5-taskbox__question {
+    padding: 0px 0px 5px 0px;
+  }
+  .game5-taskbox__answer {
+    width: 200px;
+    height: 40px;
+  }
+  .game5-taskbox__answers-box {
+    gap: 15px;
+  }
+  .game5-resultbox {
+    right: 10px;
+    bottom: 170px;
+    font-size: 14px;
+  }
+  .game5-resultbox__number {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+  }
+  .game5-box__png {
+    height: 240px;
   }
 }/*# sourceMappingURL=style.css.map */

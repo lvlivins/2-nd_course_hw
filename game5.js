@@ -1,4 +1,3 @@
-
 const quiz = [
     {
         question: "Какого цвета небо?",
@@ -17,24 +16,6 @@ const quiz = [
     }
 ];
 
-// По заданию в уроке
-// let sum = 0;
-
-// function askQuestion() {
-//     for (let i = 0; i < quiz.length; i++) {
-//         alert(quiz[i].question);
-//         const answer = Number(prompt(quiz[i].options));
-
-//         if (answer === quiz[i].correctAnswer) {
-//             sum++;
-//         }
-//     }
-// };
-
-// askQuestion();
-// alert(sum);
-
-// По своему
 const taskText = document.getElementById('taskText');
 const taskAnswer1 = document.getElementById('taskAnswer1');
 const taskAnswer2 = document.getElementById('taskAnswer2');
@@ -47,8 +28,8 @@ let i = 0;
 function askQuestion() {
 
     if (i >= quiz.length) {
-        numCorrectAnswers.innerHTML = sum; //  пихнуть в нач чтоб закончилось -инчае покажется вопрос, но ответов не будет и все застопиться
-        return;
+        numCorrectAnswers.innerHTML = sum; 
+        //  счетчик в начале, чтобы закончился, иначе снова покажется вопрос (но выбрать ответ уже не получится)
     }
 
     const question = quiz[i];
@@ -80,3 +61,20 @@ function checkAnswer(selectAnswer) {
 }
 
 askQuestion();
+
+// По заданию в уроке
+// let sum = 0;
+
+// function askQuestion() {
+//     for (let i = 0; i < quiz.length; i++) {
+//         alert(quiz[i].question);
+//         const answer = Number(prompt(quiz[i].options));
+
+//         if (answer === quiz[i].correctAnswer) {
+//             sum++;
+//         }
+//     }
+// };
+
+// askQuestion();
+// alert(sum);
